@@ -1,6 +1,7 @@
 target/
 work/logs
 work/conf
+work/classes
 
 # Ignore Intellij Idea project files
 *.iml
