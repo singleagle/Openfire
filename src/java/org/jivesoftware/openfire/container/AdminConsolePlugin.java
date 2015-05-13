@@ -325,7 +325,7 @@ public class AdminConsolePlugin implements Plugin {
         // add the normal web-app location, but the web-app in the project directory.
         if (Boolean.getBoolean("developmentMode")) {
             System.out.println(LocaleUtils.getLocalizedString("admin.console.devmode"));
-            context = new WebAppContext(contexts, pluginDir.getParentFile().getParentFile().getParentFile().getParent() +
+            context = new WebAppContext(contexts, pluginDir.getParentFile().getParentFile().getParent() +
                      File.separator + "src" + File.separator + "web", "/");
         }
         else {

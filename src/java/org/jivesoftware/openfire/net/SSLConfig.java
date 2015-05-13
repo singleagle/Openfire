@@ -78,7 +78,7 @@ public class SSLConfig {
 
         // Get the keystore location. The default location is security/keystore
         keyStoreLocation = JiveGlobals.getProperty("xmpp.socket.ssl.keystore",
-                "resources" + File.separator + "security" + File.separator + "keystore");
+                "security" + File.separator + "keystore");
         keyStoreLocation = JiveGlobals.getHomeDirectory() + File.separator + keyStoreLocation;
 
         // Get the keystore password. The default password is "changeit".
@@ -87,7 +87,7 @@ public class SSLConfig {
 
         // Get the truststore location for c2s connections
         c2sTrustStoreLocation = JiveGlobals.getProperty("xmpp.socket.ssl.client.truststore",
-                "resources" + File.separator + "security" + File.separator + "client.truststore");
+                "security" + File.separator + "client.truststore");
         c2sTrustStoreLocation = JiveGlobals.getHomeDirectory() + File.separator + c2sTrustStoreLocation;
 
         c2sTrustpass = JiveGlobals.getProperty("xmpp.socket.ssl.client.trustpass", "changeit");
@@ -95,7 +95,7 @@ public class SSLConfig {
 
         // Get the truststore location for s2s connections
         s2sTrustStoreLocation = JiveGlobals.getProperty("xmpp.socket.ssl.truststore",
-                "resources" + File.separator + "security" + File.separator + "truststore");
+               "security" + File.separator + "truststore");
         s2sTrustStoreLocation = JiveGlobals.getHomeDirectory() + File.separator + s2sTrustStoreLocation;
 
         // Get the truststore password; default is "changeit".

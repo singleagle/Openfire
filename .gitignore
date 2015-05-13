@@ -1,5 +1,6 @@
 target/
-work/
+work/logs
+work/conf
 
 # Ignore Intellij Idea project files
 *.iml
@@ -9,9 +10,7 @@ atlassian-ide-plugin.xml
 out/
 
 # Ignore Eclipse project files
-.settings
-.project
-.classpath
+
 
 # Ignore MacOSX files
 .DS_Store
